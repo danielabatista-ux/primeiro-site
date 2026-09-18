@@ -23,4 +23,7 @@ html {
   font-style: italic;
 }
 
-/* Imagem */
+/* Imagem destaque*/
+.featured-image {
+  text-align: center;
+}
