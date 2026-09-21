@@ -10,11 +10,73 @@
 
 <body>
   <h2>Formulários HTML</h2>
-  <form>
+  <form action="register.php" method="get">
     <div>
       <label>Nome:</label>
       <input type="text" />
     </div>
+
+    <!-- 3-Atributo name -->
+    <div>
+      <label>Idade:</label>
+      <input type="text" name="age">
+    </div>
+
+    <!-- 4-Atributo label -->
+    <div>
+      <label for="age">Idade:</label>
+      <input type="text" name="age">
+    </div>
+
+    <!-- 6-Select -->
+    <div>
+      <label for="job">Selecione a sua profissão:</label>
+      <select name="job">
+        <option value="programador">Programador</option>
+        <option value="desenvolvedor">Desenvolvedor</option>
+        <option value="analista de dados">Analista de dados</option>
+      </select>
+    </div>
+    <!-- 7-Atributo selected -->
+
+    <div>
+      <label for="contrat">Voce leu os termos do contrato?</label>
+      <select name="contrat">
+        <option value="Sim">Sim</option>
+        <option value="Não" selected>Não</option>
+      </select>
+    </div>
+    <!-- 8-multiplas opções -->
+    <div>
+      <label for="Items">Selecione os itens desejados:</label>
+      <select name="items" multiple>
+        <option value="pera">Pera</option>
+        <option value="feijão">Feijão</option>
+        <option value="arroz">Arroz</option>
+        <option value="milho">Milho</option>
+      </select>
+    </div>
+    <!-- 9- Tag textarea -->
+    <div>
+      <label for="coment">Escreva abaixo o que você achou do post:</label>
+      <textarea name="coment"></textarea>
+    </div>
+    <!-- 10- fieldset e legend -->
+    <div>
+      <fieldset>
+        <legend>Preencha as suas informações:</legend>
+        <label for="firstname">Nome:</label>
+        <input type="text" name="firstname" </fieldset>
+        <label for="lastname">Sobrenome</label>
+        <input type="text" name="lastname" </fieldset>
+    </div>
+    <!-- 11- Datalist -->
+    <div>
+      <label for="flavor">Escolha o sabor:</label>
+      <input type="text" name="flavor">
+    </div>
+    <!-- 5-Envio de form -->
+    <input type="submit" value="Cadastrar" />
   </form>
 
 </body>
