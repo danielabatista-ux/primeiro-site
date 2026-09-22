@@ -8,3 +8,9 @@ div input,
 div label {
   display: block;
 }
+
+.radio label,
+.radio input,
+.raio span {
+  display: inline-block;
+}
